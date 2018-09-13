@@ -51,6 +51,7 @@
         /*styles for channel area*/
         h2 {
             /* #2 #colorful #channelandchat */
+            /* Will not use it anymore due to inline CSS but will keep it just in case */
             background-color: white;
         }
 
@@ -76,6 +77,11 @@
             font-style: normal;
         }
 
+        ul {
+            /* To remove bullets from list*/
+            list-style: none;
+        }
+
     </style>
 
 </head>
@@ -84,20 +90,24 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
+<img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="DUCK" style="width: 56px">
 <h1>chatter|app</h1>
 
 <!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
+<ul style="background-color: white;">
+<li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+<li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+<li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="NON-FAVORITE"></li>
+<li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="NON-FAVORITE"></li>
+<li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+</ul>
 
 <!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
-
+<div style="background-color:white">
+<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="LIGHTBULB">new</button>
+<button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="FIRE">trending</button>
+<button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="STAR">favorites</button>
+</div>
 
 <!-- chat area -->
 <!-- #1 #chat #name -->
