@@ -10,88 +10,8 @@
     <meta charset="UTF-8">
 
     <!-- #2 #css #elements -->
-    <style>
 
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            /* Will not use it anymore due to inline CSS but will keep it just in case */
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
-        ul {
-            /* To remove bullets from list*/
-            list-style: none;
-        }
-
-        div {
-            /* Changing widht of chat messages*/
-            width: 80%;
-        }
-
-        a {
-            /* Changing links color to primary text color*/
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
 
@@ -103,7 +23,7 @@
 <h1>chatter|app</h1>
 
 <!-- #1 #channels #topics -->
-<ul style="background-color: white;">
+<ul>
 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
 <li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
 <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="NON-FAVORITE"></li>
@@ -112,7 +32,7 @@
 </ul>
 
 <!-- #1 #channels #buttons -->
-<div style="background-color:white">
+<div id="tab-bar">
 <button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="LIGHTBULB">new</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="FIRE">trending</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="STAR">favorites</button>
@@ -128,7 +48,7 @@
     </small>
 </h1>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -143,7 +63,7 @@
 <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -158,7 +78,7 @@
 <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -173,7 +93,7 @@
 <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -188,7 +108,7 @@
 <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -203,7 +123,7 @@
 <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->

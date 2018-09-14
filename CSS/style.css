@@ -1,0 +1,99 @@
+
+        /* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
+
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
+
+
+/* SECTIONS */
+
+
+        /*i. GLOBAL */
+
+        * {
+            /* #2 #font #faces */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* #2 #colorful #background */
+            background-color: #F5F5F5;
+        }
+
+
+
+        /*ii. APP BAR */
+
+        h1 {
+            /* #2 #colourful #app-bar */
+            background-color: #3F51B5;
+            color: white;
+        }
+
+        /*iii. CHANEL LISTS */
+
+        ul {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+            list-style: none;
+        }
+
+        /*iv. TAB BAR */
+
+        #tab-bar{
+            background-color: white
+        }
+
+        button {
+            /* #2 #colourful #plusfive */
+            background-color: #CDDC39;
+            color: black;
+            text-align: center;
+        }
+        strong, button {
+            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+            /* Removing UPPERCASE from Button CSS */
+            text-transform: uppercase;
+        }
+
+        /*v. MESSAGES */
+        
+        .message {
+            /* #2 #message container */
+            width: 80%;
+            margin-bottom: 8px;
+        }
+
+        .message h3 {
+            /* #2 #font #metadata is now medium */
+            font-size: medium;
+        }
+        
+        .message p {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+            padding: 16px
+        }
+        
+        .message button {
+            /* #2 #colorful #channelandchat */
+            background-color: #CDDC39;
+            color: black;
+            text-transform: uppercase;
+        }
+        .message em {
+            /* #2 #font #remaining overrides the default italic appearance of em elements*/
+            font-size: larger;
+            font-style: normal;
+        }
+        a {
+            /* Changing links color to primary text color*/
+            color: black;
+        }
