@@ -17,7 +17,7 @@
 
         * {
             /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -45,10 +45,54 @@
             list-style: none;
         }
 
+        li {
+            /* For every element of the list */
+            padding: 16px;
+            font-size: 16px;
+        }
+
+        li img {
+            /* to allign stars in the middle */
+            vertical-align: middle;
+        }
+
+        .selected-channel{
+            /* To highlight the channel */
+            color: #3F51B5;
+            border-left: 4px solid #3F51B5;
+        }
+
+        hr {
+            /* Formatting the separator line */
+            size: 1px;
+            background-color: lightgray;
+        }
+
+
         /*iv. TAB BAR */
 
         #tab-bar{
-            background-color: white
+            background-color: white;
+        }
+
+        #tab-bar button{
+            background-color: white;
+            border-style: none;
+            font-size: 13px;
+            width: 33%;
+            height: 72px;
+            padding: 16px;
+        }
+
+        #tab-bar button img{
+            display: block;
+            margin: auto;
+            padding-bottom: 4px;
+        }
+
+        #tab-bar .selected{
+            border-bottom: 4px solid #3F51B5; 
+            color: #3F51B5;
         }
 
         button {
@@ -57,6 +101,7 @@
             color: black;
             text-align: center;
         }
+
         strong, button {
             /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
             /* Removing UPPERCASE from Button CSS */
@@ -69,6 +114,12 @@
             /* #2 #message container */
             width: 80%;
             margin-bottom: 8px;
+            margin-left: 2.5%;
+        }
+
+        #own {
+            /* Own message margin */
+            margin-left: 17.5%;
         }
 
         .message h3 {

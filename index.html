@@ -13,29 +13,37 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Referencing Roboto Font from Google-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+
 </head>
 
 <body>
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-<img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="DUCK" style="width: 56px">
-<h1>chatter|app</h1>
+<h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="DUCK" style="width: 56px"> chatter|app</h1>
 
 <!-- #1 #channels #topics -->
 <ul>
 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
-<li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+<hr>
+<li class="selected-channel">#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+<hr>
 <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="NON-FAVORITE"></li>
+<hr>
 <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="NON-FAVORITE"></li>
+<hr>
 <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="FAVORITE"></li>
+<hr>
 </ul>
 
 <!-- #1 #channels #buttons -->
 <div id="tab-bar">
-<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="LIGHTBULB">new</button>
-<button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="FIRE">trending</button>
-<button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="STAR">favorites</button>
+<button class="selected"><img class="image-button" src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="LIGHTBULB">new</button>
+<button><img class="image-button" src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="FIRE">trending</button>
+<button><img class="image-button" src="https://ip.lfe.mw.tum.de/sections/star.png" alt="STAR">favorites</button>
 </div>
 
 <!-- chat area -->
@@ -48,7 +56,7 @@
     </small>
 </h1>
 
-<div class="message">
+<div id="own" class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
